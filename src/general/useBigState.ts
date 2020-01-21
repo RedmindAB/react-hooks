@@ -7,6 +7,7 @@ export default function useBigState<State>(initalState: State) {
     const newState = { ...state }
 
     for (const key in obj) {
+      // @ts-ignore
       newState[key] = obj[key]
     }
 
@@ -15,4 +16,3 @@ export default function useBigState<State>(initalState: State) {
 
   return [state, setState] as [State, typeof setState]
 }
-

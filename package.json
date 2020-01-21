@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks",
+  "name": "@redmindab/react-hooks",
   "version": "1.0.0",
   "description": "React hooks for native and web",
   "author": "redmindab",
@@ -31,9 +31,11 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/jest": "^23.3.13",
     "@types/react": "^16.7.22",
+    "@types/react-native": "^0.61.0",
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
     "react": "^16.9.0",
+    "react-native": "^0.61.5",
     "react-scripts": "^3.0.1",
     "react-test-renderer": "^16.9.0",
     "rollup": "^1.1.2",
