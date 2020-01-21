@@ -38,13 +38,13 @@ const webConfig = {
   input: 'web/index.ts',
   output: [
     {
-      file: 'dist/web/index.ts',
+      file: 'dist/web/index.es.js',
       format: 'cjs',
       exports: 'named',
       sourcemap: true
     },
     {
-      file: 'dist/web/index.ts',
+      file: 'dist/web/index.es.js',
       format: 'es',
       exports: 'named',
       sourcemap: true
