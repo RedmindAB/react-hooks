@@ -5,8 +5,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 
 import pkg from './package.json'
-
-const srcConfig = {
+export default {
   input: 'src/index.tsx',
   output: [
     {
@@ -33,33 +32,3 @@ const srcConfig = {
     commonjs()
   ]
 }
-
-const webConfig = {
-  input: 'web/index.ts',
-  output: [
-    {
-      file: 'dist/web/index.es.js',
-      format: 'cjs',
-      exports: 'named',
-      sourcemap: true
-    },
-    {
-      file: 'dist/web/index.es.js',
-      format: 'es',
-      exports: 'named',
-      sourcemap: true
-    }
-  ],
-  plugins: [
-    external(),
-    url({ exclude: ['**/*.svg'] }),
-    resolve(),
-    typescript({
-      rollupCommonJSResolveHack: true,
-      clean: true
-    }),
-    commonjs()
-  ]
-}
-
-export default [srcConfig, webConfig]
