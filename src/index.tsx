@@ -7,6 +7,7 @@ import useToggle from './general/useToggle'
 // Native
 import useLayout from './native/useLayout'
 import useContentSize from './native/useContentSize'
+const useDidWakeApp = require('./native/useDidWakeApp')
 const useAnimatedValue = require('./native/useAnimatedValue')
 
 // Web
@@ -25,5 +26,6 @@ export {
   useLayout,
   useContentSize,
   useInput,
-  useAnimatedValue
+  useAnimatedValue,
+  useDidWakeApp
 }
